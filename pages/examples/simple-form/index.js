@@ -1,7 +1,9 @@
 import Head from "next/head";
 import styles from "../../../styles/Home.module.css";
 
-export default function Home() {
+import { Formik, StringField } from "formulate";
+
+export default function SimpleForm() {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,6 +14,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>Simple form</h1>
+        <Formik>
+          <StringField name="Foo" />
+        </Formik>
       </main>
     </div>
   );
