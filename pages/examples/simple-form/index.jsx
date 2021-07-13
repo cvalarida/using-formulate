@@ -2,9 +2,7 @@ import Head from "next/head";
 import styles from "../../../styles/Home.module.css";
 
 import { Formik, Form, Field } from "formik";
-import { TextField } from "formulate";
-
-console.log(TextField);
+import { TextField, DebuggerView } from "formulate";
 
 export default function SimpleForm() {
   return (
@@ -30,11 +28,10 @@ export default function SimpleForm() {
         >
           <Form>
             <TextField name="firstName" label="First Name" placeholder="Jane" />
-
             <TextField name="lastName" label="Last Name" placeholder="Doe" />
-
             <TextField name="email" label="Email" placeholder="jane@acme.com" />
             <button type="submit">Submit</button>
+            <DebuggerView />
           </Form>
         </Formik>{" "}
       </main>
