@@ -29,11 +29,16 @@ export default function SimpleForm() {
           <Form>
             <TextField name="firstName" label="First Name" placeholder="Jane" />
             <TextField name="lastName" label="Last Name" placeholder="Doe" />
-            <TextField name="email" label="Email" placeholder="jane@acme.com" />
+            <TextField
+              name="email"
+              label="Email"
+              placeholder="jane@acme.com"
+              required
+            />
             <button type="submit">Submit</button>
             <DebuggerView />
           </Form>
-        </Formik>{" "}
+        </Formik>
       </main>
     </div>
   );

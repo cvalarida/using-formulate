@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "formik": "^2.2.9",
-    "formulate": "../formulate",
+    "formulate": "department-of-veterans-affairs/formulate",
     "next": "11.0.1",
     "next-transpile-modules": "^8.0.0",
     "react": "17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "web-components": "department-of-veterans-affairs/component-library#wc-v0.7.1"
   },
   "devDependencies": {
     "eslint": "7.29.0",
