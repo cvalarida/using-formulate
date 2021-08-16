@@ -2,7 +2,10 @@ import Head from "next/head";
 import styles from "../../../styles/Home.module.css";
 
 import { Formik, Form, Field } from "formik";
-import { TextField, DebuggerView } from "formulate";
+import {
+  TextField,
+  DebuggerView,
+} from "@department-of-veterans-affairs/formulate";
 
 export default function SimpleForm() {
   return (
